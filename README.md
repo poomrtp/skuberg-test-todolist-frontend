@@ -1,4 +1,6 @@
 ## This project is use Angular 13
+## Install package
+use `npm i`
 ## Run project
 use `ng serve` or `npm start` to start project
 ## App feature
