@@ -8,7 +8,7 @@ import { TodolistInterface } from './interfaces/todolist.interface';
 })
 export class AppComponent {
   title = 'todolist-frontend';
-  storageKey: string = 'todo-list'
+  storageKey: string = 'rtp-todo-list'
   todoData: string = ''
   todoList: TodolistInterface[] = []
 
@@ -20,7 +20,6 @@ export class AppComponent {
   }
 
   addTodo() {
-    console.log('active', this.todoData)
     if (this.todoData) {
       this.todoList.push({ title: this.todoData, isDone: false })
       localStorage.setItem(this.storageKey, JSON.stringify(this.todoList))
